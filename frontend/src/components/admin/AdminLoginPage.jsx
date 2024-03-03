@@ -22,12 +22,16 @@ const AdminLoginPage = () => {
         <div className="centered-form">
             <div className="form-container">
                 <h2>Admin Login</h2>
+                {/* Email input */}
                 <label>Email:</label>
                 <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+                {/* Password input */}
                 <label>Password:</label>
                 <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                {/* Login button */}
                 <button onClick={handleLogin}>Login</button>
                 <p>
+                    {/* Link to signup page */}
                     Dont have an account? <Link to="/signup">Sign Up</Link>
                 </p>
             </div>
