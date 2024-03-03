@@ -1,0 +1,23 @@
+/* WaitlistPage.css */
+
+.waitlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.waitlist-table th, .waitlist-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.waitlist-table th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.waitlist-table tbody tr:nth-child(even),.waitlist-table tbody tr:nth-child(even) button {
+  background-color: #f9f9f9;
+  color: black;
+}
