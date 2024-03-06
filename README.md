@@ -76,3 +76,12 @@ Run the application:
 java -jar target/backend-application.jar
 
 The backend server will start, and the application will be accessible at http://localhost:8081.
+
+## database schema
+
+CREATE TABLE waitlist (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    email_id VARCHAR(255) NOT NULL UNIQUE,
+    position INT NOT NULL,
+    referral_link VARCHAR(255) NOT NULL
+);
